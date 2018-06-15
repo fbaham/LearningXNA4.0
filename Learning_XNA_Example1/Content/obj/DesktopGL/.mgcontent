@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Profile>Reach</Profile>
+  <Platform>DesktopGL</Platform>
+  <Config />
+  <SourceFiles>
+    <File>/home/francisco/Projects/Learning_XNA_Example1/Learning_XNA_Example1/Content/Sprites/threerings.png</File>
+    <File>/home/francisco/Projects/Learning_XNA_Example1/Learning_XNA_Example1/Content/Sprites/player1.png</File>
+    <File>/home/francisco/Projects/Learning_XNA_Example1/Learning_XNA_Example1/Content/Sprites/player2.png</File>
+  </SourceFiles>
+</SourceFileCollection>

@@ -1,0 +1,16 @@
+﻿<Properties StartupConfiguration="{58E0E623-29AF-4D80-AB8A-0E9B3B64A46B}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Learning_XNA_Example1/Game1.cs">
+    <Files>
+      <File FileName="Learning_XNA_Example1/Game1.cs" Line="97" Column="22" />
+      <File FileName="Learning_XNA_Example1/Sprite.cs" Line="10" Column="35" />
+      <File FileName="Learning_XNA_Example1/AnimateSprites.cs" Line="43" Column="117" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.Learning__XNA__Example1 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
