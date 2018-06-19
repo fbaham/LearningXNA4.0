@@ -1,6 +1,7 @@
 ﻿using System;
 
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
@@ -12,6 +13,11 @@ namespace Learning_XNA_Example1
 		SpriteBatch spriteBatch;
 
 		SpriteManager spriteManager;
+
+		AudioEngine audioEngine;
+		WaveBank waveBank;
+		SoundBank soundBank;
+		Cue trackCue;
 
 		public Game1()
 		{

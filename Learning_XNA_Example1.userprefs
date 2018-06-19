@@ -1,11 +1,11 @@
 ﻿<Properties StartupConfiguration="{58E0E623-29AF-4D80-AB8A-0E9B3B64A46B}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Learning_XNA_Example1/BouncingSprite.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Learning_XNA_Example1/Game1.cs">
     <Files>
-      <File FileName="Learning_XNA_Example1/Game1.cs" Line="54" Column="4" />
-      <File FileName="Learning_XNA_Example1/Sprite.cs" Line="38" Column="3" />
-      <File FileName="Learning_XNA_Example1/AutomatedSprite.cs" Line="30" Column="4" />
-      <File FileName="Learning_XNA_Example1/BouncingSprite.cs" Line="15" Column="24" />
-      <File FileName="Learning_XNA_Example1/SpriteManager.cs" Line="42" Column="99" />
+      <File FileName="Learning_XNA_Example1/Game1.cs" Line="20" Column="16" />
+      <File FileName="Learning_XNA_Example1/Sprite.cs" Line="56" Column="4" />
+      <File FileName="Learning_XNA_Example1/AutomatedSprite.cs" Line="17" Column="56" />
+      <File FileName="Learning_XNA_Example1/BouncingSprite.cs" Line="9" Column="60" />
+      <File FileName="Learning_XNA_Example1/SpriteManager.cs" Line="74" Column="22" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
