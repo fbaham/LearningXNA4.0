@@ -16,7 +16,6 @@ namespace Learning_XNA_Example1
 		const int defaultMillisecondsPerFrame = 16;
 		protected Vector2 speed;
 		protected Vector2 position;
-		int defaultMillisecondsPerFrame1;
 
 		public Sprite (Texture2D textureImage, Vector2 position, Point frameSize, int collisionOffset, Point currentFrame, Point sheetSize, Vector2 speed) 
 			: this(textureImage, position, frameSize, collisionOffset, currentFrame, sheetSize, speed, defaultMillisecondsPerFrame)

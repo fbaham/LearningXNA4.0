@@ -4,9 +4,10 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>/home/francisco/projects/LearningXNA4.0/Learning_XNA_Example1/Content/Sprites/threerings.png</File>
-    <File>/home/francisco/projects/LearningXNA4.0/Learning_XNA_Example1/Content/Sprites/player1.png</File>
-    <File>/home/francisco/projects/LearningXNA4.0/Learning_XNA_Example1/Content/Sprites/player2.png</File>
-    <File>/home/francisco/projects/LearningXNA4.0/Learning_XNA_Example1/Content/Sprites/skullball.png</File>
+    <File>/home/francisco/Projects/Monogame/LearningXNA4.0/Learning_XNA_Example1/Content/Sprites/threerings.png</File>
+    <File>/home/francisco/Projects/Monogame/LearningXNA4.0/Learning_XNA_Example1/Content/Sprites/player1.png</File>
+    <File>/home/francisco/Projects/Monogame/LearningXNA4.0/Learning_XNA_Example1/Content/Sprites/player2.png</File>
+    <File>/home/francisco/Projects/Monogame/LearningXNA4.0/Learning_XNA_Example1/Content/Sprites/skullball.png</File>
+    <File>/home/francisco/Projects/Monogame/LearningXNA4.0/Learning_XNA_Example1/Content/Sprites/plus.png</File>
   </SourceFiles>
 </SourceFileCollection>

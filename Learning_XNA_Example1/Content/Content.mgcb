@@ -73,3 +73,21 @@
 /processorParam:TextureFormat=Color
 /build:Sprites/plus.png
 
+#begin Audio/skullcollision.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Audio/skullcollision.wav
+
+#begin Audio/start.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Audio/start.wav
+
+#begin Audio/track.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Audio/track.wav
+

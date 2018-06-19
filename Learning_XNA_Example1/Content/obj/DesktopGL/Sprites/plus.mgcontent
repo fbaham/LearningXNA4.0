@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>/home/francisco/Projects/Monogame/LearningXNA4.0/Learning_XNA_Example1/Content/Sprites/player2.png</SourceFile>
-  <SourceTime>2018-06-19T09:54:24.241738-04:00</SourceTime>
-  <DestFile>/home/francisco/Projects/Monogame/LearningXNA4.0/Learning_XNA_Example1/Content/bin/DesktopGL/Sprites/player2.xnb</DestFile>
-  <DestTime>2018-06-19T10:34:44.954607-04:00</DestTime>
+  <SourceFile>/home/francisco/Projects/Monogame/LearningXNA4.0/Learning_XNA_Example1/Content/Sprites/plus.png</SourceFile>
+  <SourceTime>2018-06-19T09:54:24.245738-04:00</SourceTime>
+  <DestFile>/home/francisco/Projects/Monogame/LearningXNA4.0/Learning_XNA_Example1/Content/bin/DesktopGL/Sprites/plus.xnb</DestFile>
+  <DestTime>2018-06-19T10:34:45.238606-04:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2018-06-18T13:48:44.632647-04:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

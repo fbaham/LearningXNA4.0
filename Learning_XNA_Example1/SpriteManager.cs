@@ -11,6 +11,9 @@ namespace Learning_XNA_Example1
 		UserControlledSprite player;
 		List<Sprite> spriteList = new List<Sprite>();
 
+		Color bgColor = Color.CornflowerBlue;
+		bool collision = false;
+
 		public SpriteManager(Game game)
 		   : base(game)
 		{
@@ -30,6 +33,10 @@ namespace Learning_XNA_Example1
 
 			player = new UserControlledSprite(Game.Content.Load<Texture2D>("Sprites/threerings"), Vector2.Zero, new Point(75, 75),
 			                                  10, new Point(0, 0), new Point(6, 8), new Vector2(6, 6));
+
+			spriteList.Add(new BouncingSprite(Game.Content.Load<Texture2D>("Sprites/plus"), new Vector2(100, 400),
+			                                  new Point(75, 75), 10, new Point(0, 0), new Point(6, 4), new Vector2(4,4)));
+
 			spriteList.Add(new AutomatedSprite(Game.Content.Load<Texture2D>("Sprites/skullball"), new Vector2(150, 150), 
 			                                   new Point(75, 75), 10, new Point(0, 0), new Point(6, 8), Vector2.Zero));
 			spriteList.Add(new AutomatedSprite(Game.Content.Load<Texture2D>("Sprites/skullball"), new Vector2(300, 150), 
@@ -38,6 +45,8 @@ namespace Learning_XNA_Example1
 			                                   new Point(75, 75), 10, new Point(0, 0), new Point(6, 8), Vector2.Zero));
 			spriteList.Add(new AutomatedSprite(Game.Content.Load<Texture2D>("Sprites/skullball"), new Vector2(600, 400), 
 			                                   new Point(75, 75), 10, new Point(0, 0), new Point(6, 8), Vector2.Zero));
+
+
 
 			base.LoadContent();
 		}
@@ -52,16 +61,25 @@ namespace Learning_XNA_Example1
 			{
 				s.Update(gameTime, Game.Window.ClientBounds);
 
-				// Controla las colisiones y cierra el juego si ocurre una
-				if (s.collisionRect.Intersects(player.collisionRect))
-					Game.Exit();
+				// Controla las colisiones
+				if (player.collisionRect.Intersects(s.collisionRect))
+					collision = true;
+				/// Reparar el problema que se produce con los elementos del spriteList.
 			}
+			if (collision)
+				bgColor = Color.Red;
+			else
+				bgColor = Color.CornflowerBlue;
+
+			collision = false;
 
 			base.Update(gameTime);
 		}
 
 		public override void Draw(GameTime gameTime)
 		{
+			GraphicsDevice.Clear(bgColor);
+
 			spriteBatch.Begin(SpriteSortMode.FrontToBack, BlendState.AlphaBlend);
 			// Draw the player
 			player.Draw(gameTime, spriteBatch);
