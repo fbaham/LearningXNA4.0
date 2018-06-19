@@ -41,3 +41,4 @@
 /home/francisco/projects/LearningXNA4.0/Learning_XNA_Example1/obj/x86/Debug/Learning_XNA_Example1.pdb
 /home/francisco/projects/LearningXNA4.0/Learning_XNA_Example1/bin/Debug/MonoGame.Framework.dll
 /home/francisco/projects/LearningXNA4.0/Learning_XNA_Example1/bin/Debug/Content/Sprites/skullball.xnb
+/home/francisco/projects/LearningXNA4.0/Learning_XNA_Example1/bin/Debug/Content/Sprites/plus.xnb
