@@ -4,36 +4,82 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace Learning_XNA_Example1
 {
-	public class Sprite
+	abstract class Sprite
 	{
-		/// Textura a dibujar
-		public Texture2D texture { get; set;}
-		/// Coordina desde la esquina superior izquierda la posición en la cual se dibujará la tectura
-		public Vector2 position { get; set;}
-		/// Permite dibujar solo una porción de la textura 
-		public Rectangle source { get; set;}
-		/// Color sobrepuesto a la textura, usa White para no sobreponer nada
-		public Color color { get; set; }
-		/// Rota la imagen
-		public float rotation { get; set; }
-		/// Indica el origen desde donde rotar la imagen
-		public Vector2 origin { get; set; }
-		/// Escala la textura
-		public float scale { get; set; }
-		/// Usa para voltear la imagen de forma horizontal o vertical
-		public SpriteEffects effects { get; set; }
-		/// Especifica qué imagen está por sobre la otra
-		public float layerDepth { get; set; }
+		Texture2D textureImage;
+		protected Point frameSize;
+		Point currentFrame;
+		Point sheetSize;
+		int collisionOffset;
+		int timeSinceLastFrame = 0;
+		int millisecondsPerFrame;
+		const int defaultMillisecondsPerFrame = 16;
+		protected Vector2 speed;
+		protected Vector2 position;
+		int defaultMillisecondsPerFrame1;
 
+		public Sprite (Texture2D textureImage, Vector2 position, Point frameSize, int collisionOffset, Point currentFrame, Point sheetSize, Vector2 speed) 
+			: this(textureImage, position, frameSize, collisionOffset, currentFrame, sheetSize, speed, defaultMillisecondsPerFrame)
+		{
+		}
 
-		//public void Draw(SpriteBatch spriteBatch)
-		//{
-		//	/// Llamada simple al metodo Draw
-		//	//spriteBatch.Draw(texture, position, color);
+		public Sprite(Texture2D textureImage, Vector2 position, Point frameSize, int collisionOffset, Point currentFrame, Point sheetSize, 
+		              Vector2 speed, int millisecondsPerFrame)
+		{
+			this.textureImage = textureImage;
+			this.position = position;
+			this.frameSize = frameSize;
+			this.collisionOffset = collisionOffset;
+			this.currentFrame = currentFrame;
+			this.sheetSize = sheetSize;
+			this.speed = speed;
+			this.millisecondsPerFrame = millisecondsPerFrame;
+		}
 
-		//	/// Llamada completa al metodo Draw
-		//	spriteBatch.Draw(texture, position, null, color, rotation, origin, scale, effects, layerDepth);
+		public abstract Vector2 direction
+		{
+			get;
+		}
 
-		//}
+		public Rectangle collisionRect
+		{
+			get
+			{
+				return new Rectangle((int)position.X + collisionOffset,
+									 (int)position.Y + collisionOffset,
+									 frameSize.X - (collisionOffset * 2),
+				                     frameSize.Y - (collisionOffset * 2));
+			}
+		}
+
+		public virtual void Update(GameTime gameTime, Rectangle clientBounds)
+		{
+			/// gameTime.ElapsedGameTime.Milliseconds entrega el tiempo transcurrido entre cada llamada al metodo update en milisegundos.
+			/// timeSinceLastFrame acumula el tiempo hasta superar el valor de la variable millisecondsPerFrame.
+			/// Actualmente esa variable se encuentra configurada con un valor de 50, lo que permite que el framerate del sprite sea de 20fps.
+			timeSinceLastFrame += gameTime.ElapsedGameTime.Milliseconds;
+			if (timeSinceLastFrame > millisecondsPerFrame)
+			{
+				timeSinceLastFrame = 0;
+				++currentFrame.X;
+				if (currentFrame.X >= sheetSize.X)
+				{
+					currentFrame.X = 0;
+					++currentFrame.Y;
+					if (currentFrame.Y >= sheetSize.Y)
+						currentFrame.Y = 0;
+				}
+			}
+		}
+
+		public virtual void Draw(GameTime gameTime, SpriteBatch spriteBatch)
+		{
+			spriteBatch.Draw(textureImage, position,
+							 new Rectangle(currentFrame.X * frameSize.X,
+										   currentFrame.Y * frameSize.Y,
+										   frameSize.X, frameSize.Y),
+							Color.White, 0, Vector2.Zero, 1f, SpriteEffects.None, 0);
+		}
+
 	}
 }

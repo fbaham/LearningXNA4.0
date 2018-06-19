@@ -4,8 +4,9 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>/home/francisco/Projects/Learning_XNA_Example1/Learning_XNA_Example1/Content/Sprites/threerings.png</File>
-    <File>/home/francisco/Projects/Learning_XNA_Example1/Learning_XNA_Example1/Content/Sprites/player1.png</File>
-    <File>/home/francisco/Projects/Learning_XNA_Example1/Learning_XNA_Example1/Content/Sprites/player2.png</File>
+    <File>/home/francisco/projects/LearningXNA4.0/Learning_XNA_Example1/Content/Sprites/threerings.png</File>
+    <File>/home/francisco/projects/LearningXNA4.0/Learning_XNA_Example1/Content/Sprites/player1.png</File>
+    <File>/home/francisco/projects/LearningXNA4.0/Learning_XNA_Example1/Content/Sprites/player2.png</File>
+    <File>/home/francisco/projects/LearningXNA4.0/Learning_XNA_Example1/Content/Sprites/skullball.png</File>
   </SourceFiles>
 </SourceFileCollection>
