@@ -41,6 +41,7 @@
 /home/francisco/projects/LearningXNA4.0/Learning_XNA_Example1/obj/x86/Debug/Learning_XNA_Example1.pdb
 /home/francisco/projects/LearningXNA4.0/Learning_XNA_Example1/bin/Debug/MonoGame.Framework.dll
 /home/francisco/projects/LearningXNA4.0/Learning_XNA_Example1/bin/Debug/Content/Sprites/skullball.xnb
+<<<<<<< HEAD
 /home/francisco/Projects/Monogame/LearningXNA4.0/Learning_XNA_Example1/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
 /home/francisco/Projects/Monogame/LearningXNA4.0/Learning_XNA_Example1/obj/x86/Debug/Learning_XNA_Example1.Icon.ico
 /home/francisco/Projects/Monogame/LearningXNA4.0/Learning_XNA_Example1/obj/x86/Debug/Learning_XNA_Example1.exe
@@ -64,3 +65,6 @@
 /home/francisco/Projects/Monogame/LearningXNA4.0/Learning_XNA_Example1/bin/Debug/Content/Sprites/threerings.xnb
 /home/francisco/Projects/Monogame/LearningXNA4.0/Learning_XNA_Example1/bin/Debug/Learning_XNA_Example1.pdb
 /home/francisco/Projects/Monogame/LearningXNA4.0/Learning_XNA_Example1/bin/Debug/Learning_XNA_Example1.exe
+=======
+/home/francisco/projects/LearningXNA4.0/Learning_XNA_Example1/bin/Debug/Content/Sprites/plus.xnb
+>>>>>>> eb6665e9cefe907360f2b9f59fcae86f31d78008
