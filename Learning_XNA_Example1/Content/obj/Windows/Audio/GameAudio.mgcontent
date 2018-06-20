@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SourceFile>/home/francisco/Projects/Monogame/LearningXNA4.0/Learning_XNA_Example1/Content/Audio/GameAudio.xap</SourceFile>
+  <SourceTime>2010-09-18T10:54:29.772915-04:00</SourceTime>
+  <DestFile>/home/francisco/Projects/Monogame/LearningXNA4.0/Learning_XNA_Example1/Content/bin/Windows/Audio/GameAudio.xnb</DestFile>
+  <DestTime>2018-06-20T13:44:22.385627-04:00</DestTime>
+  <Importer>XImporter</Importer>
+  <ImporterTime>2018-06-18T13:48:44.632647-04:00</ImporterTime>
+  <Processor>PassThroughProcessor</Processor>
+  <ProcessorTime>2018-06-18T13:48:44.632647-04:00</ProcessorTime>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput />
+</PipelineBuildEvent>

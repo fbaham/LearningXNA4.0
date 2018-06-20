@@ -14,10 +14,7 @@ namespace Learning_XNA_Example1
 
 		SpriteManager spriteManager;
 
-		AudioEngine audioEngine;
-		WaveBank waveBank;
-		SoundBank soundBank;
-		Cue trackCue;
+
 
 		public Game1()
 		{
@@ -35,7 +32,6 @@ namespace Learning_XNA_Example1
 
 		protected override void LoadContent()
 		{
-			// Create a new SpriteBatch, which can be used to draw textures.
 			spriteBatch = new SpriteBatch(GraphicsDevice);
 		}
 

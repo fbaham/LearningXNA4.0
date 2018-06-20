@@ -68,3 +68,6 @@
 =======
 /home/francisco/projects/LearningXNA4.0/Learning_XNA_Example1/bin/Debug/Content/Sprites/plus.xnb
 >>>>>>> eb6665e9cefe907360f2b9f59fcae86f31d78008
+/home/francisco/Projects/Monogame/LearningXNA4.0/Learning_XNA_Example1/bin/Debug/Content/Audio/skullcollision.xnb
+/home/francisco/Projects/Monogame/LearningXNA4.0/Learning_XNA_Example1/bin/Debug/Content/Audio/start.xnb
+/home/francisco/Projects/Monogame/LearningXNA4.0/Learning_XNA_Example1/bin/Debug/Content/Audio/track.xnb

@@ -35,10 +35,8 @@ namespace Learning_XNA_Example1
 			this.millisecondsPerFrame = millisecondsPerFrame;
 		}
 
-		public abstract Vector2 direction
-		{
-			get;
-		}
+
+		public abstract Vector2 direction { get; }
 
 		public Rectangle collisionRect
 		{
